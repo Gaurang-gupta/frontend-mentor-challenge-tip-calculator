@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="">
+  </div>
+  <main class="main">
+    <div class="left">
+      <label class="billLabel" for="bill">Bill</label>
+      <div class="peopleInput">
+        <img class="dollar" src="./images/icon-dollar.svg" alt="">
+        <input class="input" type="text" id="bill" placeholder="0">
+      </div>
+      <h2 class="tip_container">Select tip %</h2>
+      <div class="tip">
+        <div class="tip_button">5%</div>
+        <div class="tip_button">10%</div>
+        <div class="tip_button">15%</div>
+        <div class="tip_button">25%</div>
+        <div class="tip_button">50%</div>
+        <div class="custom">Custom</div>
+        <div class="custom custom_tip_input">
+          <input type="text" placeholder="0" class="tip_input">
+        </div>
+      </div>
+      <label for="people">Number of People</label>
+      <div class="peopleInput">
+        <img class="dollar" src="./images/icon-person.svg" alt="">
+        <input class="input" type="text" min="0" id="people" placeholder="0">
+      </div>
+    </div>
+    <div class="right">
+      <div class="wrapper">
+        <div class="right_section one">
+          <div>
+            <div>Tip Amount</div>
+            <div class="footer">/ person</div>
+          </div>
+          <div class="amount_container">
+            <img class="dollar amount_dollar" src="./images/icon-dollar.svg" alt="">
+            <span class="amount">0.00</span>
+          </div>
+        </div>
+        <div class="right_section">
+          <div>
+            <div>Total</div>
+            <div class="footer">/ person</div>
+          </div>
+          <div class="amount_container">
+            <img class="dollar amount_dollar" src="./images/icon-dollar.svg" alt="">
+            <span class="amount">0.00</span>
+          </div>
+        </div>
+      </div>
+      <button class="reset">Reset</button>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gaurang Gupta</a>.
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
